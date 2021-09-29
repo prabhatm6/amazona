@@ -1,0 +1,25 @@
+extend base
+
+block content
+    div.main
+        form.form(action="#")
+            p.form__head Create Account
+            .form__input-box
+                label Name
+                input(type="text")
+            .form__input-box
+                label E-mail
+                input(type="email")
+            .form__input-box
+                label Password
+                input(type="password")
+            .form__input-box
+                label Re-Enter Password
+                input(type="password")
+            button Register
+            p.form__signin already have an Account?
+                a(href="/Signin") sign in
+    include footer
+
+
+
